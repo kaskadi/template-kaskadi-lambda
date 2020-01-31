@@ -2,7 +2,7 @@
   "name": "template-kaskadi-lambda",
   "version": "1.0.0",
   "description": "",
-  "main": "template-kaskadi-lambda.js",
+  "main": "serverless.yml",
   "scripts": {
     "test": "echo \"No test script defined.\""
   },
