@@ -34,3 +34,5 @@ functions:
           method: get
           path: hello
           cors: true
+
+# new
