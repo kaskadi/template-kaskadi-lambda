@@ -16,6 +16,7 @@ provider:
   region: ${opt:region, 'eu-central-1'}
   deploymentBucket:
     name: ${env:SLS_DEPLOY_BUCKET}
+  deploymentPrefix: ${self:service.name}
   # uncomment the following if you need to link to an API. Replace with the proper exported value from your API
   # apiGateway:
   #   restApiId: !ImportValue RestAPIGatewayId
