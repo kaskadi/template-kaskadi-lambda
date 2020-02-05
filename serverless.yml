@@ -14,6 +14,8 @@ provider:
   stackName: ${self:service.name}-stack
   stage: ${opt:stage, 'prod'}
   region: ${opt:region, 'eu-central-1'}
+  deploymentBucket:
+    name: ${env:SLS_DEPLOY_BUCKET}
   # uncomment the following if you need to link to an API. Replace with the proper exported value from your API
   # apiGateway:
   #   restApiId: !ImportValue RestAPIGatewayId
