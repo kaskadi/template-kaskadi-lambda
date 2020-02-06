@@ -1,4 +1,10 @@
-# :computer: Creating a new Lambda :computer:
+**Badges here**
+
+****
+
+**This section can be deleted when done with all the preliminary work**
+
+# :computer: Creating a new Lambda from this template :computer:
 
 **Checklist (delete items when done)**
 - create a new repository and choose this repository (`template-kaskadi-lambda`) as template
@@ -55,3 +61,7 @@ Before pushing for the first time, please setup secrets on this repository.
 3. **if the repo is not added automatically**: copy the URL of your repository root and paste it on your _LGTM_ dashboard in the `Follow a project from a repository host` field.
 
 **Note:** By following a repository, this should setup a watcher on your GitHub account/organization and automatically add any active repositories on your _LGTM_ dashboard. This is why your newly created repository may already be tracked on your _LGTM_ tracker.
+
+****
+
+**Your documentation here**
