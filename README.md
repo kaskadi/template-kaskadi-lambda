@@ -1,8 +1,8 @@
-**Badges here**
+:point_right: **Badges here** :point_left:
 
 ****
 
-**This section can be deleted when done with all the preliminary work**
+❌ **This section can be deleted when done with all the preliminary work** ❌
 
 # :computer: Creating a new Lambda from this template :computer:
 
@@ -64,4 +64,4 @@ Before pushing for the first time, please setup secrets on this repository.
 
 ****
 
-**Your documentation here**
+:point_down: **Your documentation here** :point_down:
