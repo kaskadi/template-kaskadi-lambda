@@ -4,7 +4,7 @@
 
 **GitHub Actions workflows status**
 
-![](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/deploy)
+![](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/deploy?label=deployed&logo=Amazon%20AWS)
 
 **CodeClimate**
 
