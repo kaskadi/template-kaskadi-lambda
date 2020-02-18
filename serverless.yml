@@ -23,7 +23,7 @@ provider:
   #   restApiRootResourceId: !ImportValue RestAPIGatewayRootResourceId
 
 functions:
-  TemplateKaskadiLambda:
+  TemplateKaskadi:
     handler: template-kaskadi-lambda.handler
     name: ${self:service.name}
     package:
