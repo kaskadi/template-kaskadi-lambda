@@ -1,7 +1,7 @@
 # ATTENTION: when done with setting up this file, you can go into .github/workflows/deploy.yml to use the 'deploy -v' command for this action in order to deploy your lambda
 
 service:
-  name: PROJECT_NAME-API_LOGICAL_UNIT-template-kaskadi-lambda
+  name: template-kaskadi-lambda
 
 package:
   individually: true
@@ -23,7 +23,7 @@ provider:
   #   restApiRootResourceId: !ImportValue RestAPIGatewayRootResourceId
 
 functions:
-  testLambda:
+  TemplateKaskadiLambda:
     handler: template-kaskadi-lambda.handler
     name: ${self:service.name}
     package:
