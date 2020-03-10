@@ -10,13 +10,12 @@ package:
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   stackName: ${self:service.name}-stack
   stage: ${opt:stage, 'prod'}
-  region: ${opt:region, 'eu-central-1'}
+  region: eu-central-1
   deploymentBucket:
-    name: ${env:SLS_DEPLOY_BUCKET}
-  deploymentPrefix: ${self:service.name}
+    name: kaskadi-serverless-deployment-bucket
   # uncomment the following if you need to link to an API. Replace with the proper exported value from your API
   # apiGateway:
   #   restApiId: !ImportValue RestAPIGatewayId

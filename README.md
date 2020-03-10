@@ -69,11 +69,9 @@ Before pushing for the first time, please setup secrets on this repository.
 - `AWS_KEY_ID`
 - `AWS_KEY_SECRET`
 - `REPORTER_ID`
-- `SLS_DEPLOY_BUCKET`
 
 `AWS_KEY_ID` & `AWS_KEY_SECRET`: those are the credentials of a role which has enough permission to publish a new Lambda.
 `REPORTER_ID`: this is the ID of the reporter associated with this repository on _CodeClimate_.
-`SLS_DEPLOY_BUCKET`: this is the bucket where the _Serverless_ build should be uploaded at deployment.
 
 ## Add the lambda repository on [_CodeClimate_](https://codeclimate.com)
 
