@@ -16,10 +16,12 @@ provider:
   region: eu-central-1
   deploymentBucket:
     name: kaskadi-serverless-deployment-bucket
-  # uncomment the following if you need to link to an API. Replace with the proper exported value from your API
-  # apiGateway:
-  #   restApiId: !ImportValue RestAPIGatewayId
-  #   restApiRootResourceId: !ImportValue RestAPIGatewayRootResourceId
+  # update this section to use proper tags for your lambda
+  tags:
+    app: your-app-name,
+    service: ${self:service.name},
+    logical-unit: api-logical-unit,
+    type: 's3, sns, etc.'
 
 functions:
   TemplateKaskadi:
