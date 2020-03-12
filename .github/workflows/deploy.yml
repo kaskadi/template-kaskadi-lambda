@@ -8,6 +8,7 @@ on:
     paths:
       - 'serverless.yml'
       - 'template-kaskadi-lambda.js'
+      - 'layer/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
