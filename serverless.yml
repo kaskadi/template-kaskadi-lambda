@@ -29,7 +29,7 @@ functions:
     handler: template-kaskadi-lambda.handler
     name: ${self:service.name}
     layers:
-      - !Ref LambdaLayer
+      - !Ref LayerLambdaLayer
     package:
       include:
         - 'template-kaskadi-lambda.js'
@@ -42,7 +42,7 @@ functions:
           cors: true
 
 layers:
-  LambdaLayer:
+  Layer:
     path: layer
     name: ${self:service.name}-layer
     description: Layer for ${self:service.name}
