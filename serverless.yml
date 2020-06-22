@@ -16,7 +16,9 @@ provider:
   region: eu-central-1
   deploymentBucket:
     name: kaskadi-serverless-deployment-bucket
-  # update this section to use proper tags for your lambda
+  # update this section to use proper tags for your lambda and stack
+  stackTags: 
+    app: your-app-name
   tags:
     app: your-app-name
     service: ${self:service.name}
