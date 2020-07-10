@@ -48,7 +48,6 @@ It is known that this action sometimes does not run (see [here](https://github.c
 **Checklist (delete items when done)**
 - create a new repository and choose this repository as template
 - clone the new repository to a local working copy
-- set secrets up ([help](#Set-secrets-up))
 - add the new repository to:
   - _CodeClimate_ ([help](#Add-the-lambda-repository-on-CodeClimate))
   - _LGTM_ ([help](#Add-the-lambda-repository-on-LGTM))
@@ -57,22 +56,6 @@ It is known that this action sometimes does not run (see [here](https://github.c
 - when you feel like your Lambda is ready for deployment, go [here](./.github/workflows/deploy.yml) and change the `command` field to `deploy -v`
 
 **Attention:** if you wish to use kaskadi's CLI tools, make sure to have `kaskadi-cli` installed globally (`npm i -g kaskadi-cli`)
-
-## Set secrets up
-
-Before pushing for the first time, please setup secrets on this repository.
-
-**Steps:**
-- go to your [repositorys secrets setting](../../settings/secrets)
-- click on _Add a new secret_ for each secret you want to add
-
-**What secrets need to be set:**
-- `AWS_KEY_ID`
-- `AWS_KEY_SECRET`
-- `REPORTER_ID`
-
-`AWS_KEY_ID` & `AWS_KEY_SECRET`: those are the credentials of a role which has enough permission to publish a new Lambda.
-`REPORTER_ID`: this is the ID of the reporter associated with this repository on _CodeClimate_.
 
 ## Add the lambda repository on [_CodeClimate_](https://codeclimate.com)
 
