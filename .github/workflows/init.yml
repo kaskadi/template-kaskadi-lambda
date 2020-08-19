@@ -1,8 +1,9 @@
 name: init
-on: create
+on: push
 jobs:
   init:
     runs-on: ubuntu-latest
+    if: github.repository != 'kaskadi/template-kaskadi-lambda'
     steps:
     - uses: actions/checkout@v2
     - name: Init
