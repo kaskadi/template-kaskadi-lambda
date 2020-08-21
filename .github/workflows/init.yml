@@ -17,4 +17,4 @@ jobs:
     - name: Initialize repository
       uses: kaskadi/action-init@master
       with:
-        repoType: 'action'
+        repoType: 'lambda'
