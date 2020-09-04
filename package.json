@@ -5,6 +5,7 @@
   "main": "serverless.yml",
   "scripts": {
     "test": "echo \"No test script defined.\"",
+    "coverage": "echo \"No coverage script defined.\"",
     "preinstall": "bash install.sh"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.1",
+    "nyc": "^15.1.0",
     "standard": "^14.3.4"
   }
 }
