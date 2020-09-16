@@ -22,46 +22,21 @@
 
 ****
 
-❌ **This section can be deleted when done with all the preliminary work** ❌
+# Testing
 
-# :computer: Creating a new Lambda from this template :computer:
+`mocha`, `chai`, `nyc` & `standard` are available as dev dependencies.
 
-**Checklist (delete items when done)**
-- create a new repository and choose this repository as template
-- clone the new repository to a local working copy
-- add the new repository to:
-  - _CodeClimate_ ([help](#Add-the-lambda-repository-on-CodeClimate))
-  - _LGTM_ ([help](#Add-the-lambda-repository-on-LGTM))
-- install all dependencies via `npm i`
-- develop your Lambda and update its `serverless.yml` config file for deployment
-- when you feel like your Lambda is ready for deployment, go [here](./.github/workflows/deploy.yml) and change the `command` field to `deploy -v`
+A `build` workflow (see [here](./.github/workflows/build.yml)) is running on `pull request` and will execute your test suite before allowing you to merge your PR. It also has a `coverage` job already prepared that you can comment out as soon as your testing is in place and your `REPORTER_ID` is in the repository secrets. This is the ID on _Code Climate_ used for uploading code coverage reports.
 
-**Attention:** if you wish to use kaskadi's CLI tools, make sure to have `kaskadi-cli` installed globally (`npm i -g kaskadi-cli`)
+Along `build`, a `syntax-check` workflow will also run to check your `serverless.yml` file syntax.
 
-## Add the lambda repository on [_CodeClimate_](https://codeclimate.com)
+****
 
-**Steps:**
-1. log into your dashboard on [_CodeClimate_](https://codeclimate.com/dashboard)
-2. pick the correct organization
-  - kaskadi for closed source projects
-  - Open source otherwise
-3. click on `Add a repository`
-4. once the list of repositories is visible, click on `Add Repo` next to the repository you would like to add on _CodeClimate_
+# Deploying
 
-**But, how can I find my reporter ID?**
+Deploying to AWS is done automatically via a `deploy` workflow (see [here](./.github/workflows/deploy.yml)). This workflow will run on `push` to `master`. Before publishing, it checks for syntax error in your `serverless.yml` file.
 
-1. go into the repository you would like to set test coverage reporting for
-2. click on `Repo Settings` in the top navigation bar
-3. click on `Test coverage` in the menu on the left side
-4. you can now copy the _TEST REPORTER ID_ and use it as secrets (`REPORTER_ID`) in your repository to setup automated test coverage reporting!
-
-## Add the lambda repository on [_LGTM_](https://lgtm.com)
-
-1. log into your dashboard on [_LGTM_](https://lgtm.com/dashboard)
-2. review if the repository you would like to add is already tracked
-3. **if the repo is not added automatically**: copy the URL of your repository root and paste it on your _LGTM_ dashboard in the `Follow a project from a repository host` field.
-
-**Note:** By following a repository, this should setup a watcher on your GitHub account/organization and automatically add any active repositories on your _LGTM_ dashboard. This is why your newly created repository may already be tracked on your _LGTM_ tracker.
+**Warning: you may need to manually deploy the first time via `Serverless` CLI locally.**
 
 ****
 
