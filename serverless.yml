@@ -26,7 +26,7 @@ provider:
     type: 's3, sns, etc.'
 
 functions:
-  TemplateKaskadi:
+  TemplateKaskadiLambda:
     handler: template-kaskadi-lambda.handler
     name: ${self:service.name}
     package:
