@@ -18,7 +18,7 @@
 
 [![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/template-kaskadi-lambda?label=code%20quality&logo=LGTM)](https://lgtm.com/projects/g/kaskadi/template-kaskadi-lambda/?mode=list&logo=LGTM)
 
-:point_right: **Badges here** :point_left:
+<!-- You can add badges inside of this section if you'd like -->
 
 ****
 
@@ -52,7 +52,7 @@ Deploying to AWS is done automatically via a `deploy` workflow (see [here](./.gi
 
 ****
 
-<!-- do not touch: automatically generated documentation goes here -->
+<!-- automatically generated documentation will be placed in here -->
 # Resources documentation
 
 The following lambda functions are defined in this repository:
@@ -68,4 +68,6 @@ _no layer defined in the configuration file..._
 | template-kaskadi-lambda | <ul><li>HTTP</li></ul> | default | [handler](./template-kaskadi-lambda.js) |
 
 See [configuration file](./serverless.yml) for more details.
-<!-- do not touch: automatically generated documentation goes here -->
+<!-- automatically generated documentation will be placed in here -->
+
+<!-- You can customize this template as you'd like! -->
