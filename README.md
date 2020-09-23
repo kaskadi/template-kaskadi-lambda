@@ -32,6 +32,16 @@ Along `build`, a `syntax-check` workflow will also run to check your `serverless
 
 ****
 
+# Documentation
+
+This repository comes with a `generate-docs` job inside of the `deploy` workflow that generates documentation automatically for you by reading your main `serverless.yml` configuration file and extracting meta data of all lambda functions you defined. See [here](https://github.com/kaskadi/action-generate-docs) for more information.
+
+If you would like to see the workflow configuration, head [here](./.github/workflows/deploy.yml).
+
+You can configure the template used to generate the action documentation [here](./docs/template.md).
+
+****
+
 # Deploying
 
 Deploying to AWS is done automatically via a `deploy` workflow (see [here](./.github/workflows/deploy.yml)). This workflow will run on `push` to `master`. Before publishing, it checks for syntax error in your `serverless.yml` file.
@@ -42,4 +52,20 @@ Deploying to AWS is done automatically via a `deploy` workflow (see [here](./.gi
 
 ****
 
-:point_down: **Your documentation here** :point_down:
+<!-- do not touch: automatically generated documentation goes here -->
+# Resources documentation
+
+The following lambda functions are defined in this repository:
+- [template-kaskadi-lambda](#template-kaskadi-lambda)
+
+The following layers are defined in this repository:
+_no layer defined in the configuration file..._
+
+## template-kaskadi-lambda <a name="template-kaskadi-lambda"></a>
+
+|           Name          | Sources                | Timeout |                 Handler                 |
+| :---------------------: | :--------------------- | :-----: | :-------------------------------------: |
+| template-kaskadi-lambda | <ul><li>HTTP</li></ul> | default | [handler](./template-kaskadi-lambda.js) |
+
+See [configuration file](./serverless.yml) for more details.
+<!-- do not touch: automatically generated documentation goes here -->
