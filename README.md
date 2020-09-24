@@ -75,7 +75,7 @@ See [configuration file](./serverless.yml) for more details.
 
 Layer for template-kaskadi-lambda
 
-### Installed NPM dependencies
+### Dependencies
 
 - `template-kaskadi-lambda-utils` (local utility)
 
