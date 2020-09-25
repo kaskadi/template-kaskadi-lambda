@@ -63,9 +63,9 @@ The following layers are defined in this repository:
 
 ## template-kaskadi-lambda <a name="template-kaskadi-lambda"></a>
 
-|           Name          | Sources                | Timeout |                 Handler                 | Layers                                                                            |
-| :---------------------: | :--------------------- | :-----: | :-------------------------------------: | :-------------------------------------------------------------------------------- |
-| template-kaskadi-lambda | <ul><li>HTTP</li></ul> | default | [handler](./template-kaskadi-lambda.js) | <ul><li>[template-kaskadi-lambda-layer](#template-kaskadi-lambda-layer)</li></ul> |
+|           Name          | Sources                                   | Timeout |                 Handler                 | Layers                                                                                               |
+| :---------------------: | :---------------------------------------- | :-----: | :-------------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| template-kaskadi-lambda | <ul style="margin: 0;"><li>HTTP</li></ul> | default | [handler](./template-kaskadi-lambda.js) | <ul style="margin: 0;"><li>[template-kaskadi-lambda-layer](#template-kaskadi-lambda-layer)</li></ul> |
 
 See [configuration file](./serverless.yml) for more details.
 
