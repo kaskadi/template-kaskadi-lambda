@@ -1,5 +1,5 @@
 # ATTENTION: no deployment should be done until serverless.yml is properly setup
-name: deploy
+name: generate-docs
 on:
   push:
     branches:
