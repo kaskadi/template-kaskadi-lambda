@@ -4,9 +4,10 @@
 
 **GitHub Actions workflows status**
 
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/deploy?label=deployed&logo=Amazon%20AWS)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Adeploy)
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/build?label=build&logo=mocha)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Abuild)
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/syntax-check?label=syntax-check&logo=serverless)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Asyntax-check)
+[![Deploy status](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/deploy?label=deployed&logo=Amazon%20AWS)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Adeploy)
+[![Build status](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/build?label=build&logo=mocha)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Abuild)
+[![Syntax check status](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/syntax-check?label=syntax-check&logo=serverless)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Asyntax-check)
+[![Docs generation status](https://img.shields.io/github/workflow/status/kaskadi/template-kaskadi-lambda/generate-docs?label=docs&logo=read-the-docs)](https://github.com/kaskadi/template-kaskadi-lambda/actions?query=workflow%3Agenerate-docs)
 
 **CodeClimate**
 
@@ -34,9 +35,11 @@ Along `build`, a `syntax-check` workflow will also run to check your `serverless
 
 # Documentation
 
-This repository comes with a `generate-docs` job inside of the `deploy` workflow that generates documentation automatically for you by reading your main `serverless.yml` configuration file and extracting meta data of all lambda functions you defined. See [here](https://github.com/kaskadi/action-generate-docs) for more information.
+This repository comes with a `generate-docs` workflow that generates documentation automatically for you by reading your main `serverless.yml` configuration file and extracting meta data of all lambda functions you defined. See [here](https://github.com/kaskadi/action-generate-docs) and [there](./serverless.yml) for more information.
 
-If you would like to see the workflow configuration, head [here](./.github/workflows/deploy.yml).
+Before generating the documentation, the workflow will check for syntax error in your `serverless.yml` file.
+
+If you would like to see the workflow configuration, head [here](./.github/workflows/generate-docs.yml).
 
 You can configure the template used to generate the action documentation [here](./docs/template.md).
 
