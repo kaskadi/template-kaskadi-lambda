@@ -1,4 +1,3 @@
-# ATTENTION: no deployment should be done until serverless.yml is properly setup
 name: generate-docs
 on:
   push:
