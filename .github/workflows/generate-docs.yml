@@ -7,7 +7,6 @@ on:
     paths:
       - 'serverless.yml'
       - 'package.json'
-      - 'template-kaskadi-lambda.js'
       - 'layer/**'
       - 'docs/**'
 env:
