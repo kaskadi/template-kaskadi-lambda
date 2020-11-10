@@ -40,10 +40,6 @@ jobs:
     needs: analyze
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-        registry-url: https://registry.npmjs.org/
     - name: Install dependencies
       run: npm i
     - name: Test
@@ -54,10 +50,6 @@ jobs:
     needs: analyze
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-        registry-url: https://registry.npmjs.org/
     - name: Install dependencies
       run: npm i
     - name: serverless check
@@ -69,10 +61,6 @@ jobs:
     needs: [test, syntax-check]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-        registry-url: https://registry.npmjs.org/
     - name: Install dependencies
       run: npm i
     - name: serverless deploy
