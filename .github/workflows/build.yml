@@ -8,6 +8,7 @@ on:
     types: [opened, reopened, edited, synchronize]
     paths:
       - 'template-kaskadi-lambda.js'
+      - 'serverless.yml'
       - 'layer/**'
       - 'test/**'
       - 'package.json'
@@ -32,6 +33,16 @@ jobs:
       uses: github/codeql-action/autobuild@v1
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: serverless syntax check
+      uses: serverless/github-action@master
+      with:
+        args: deploy --noDeploy
   build:
     runs-on: ubuntu-latest
     steps:
